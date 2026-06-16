@@ -117,13 +117,11 @@ function Hero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h1 className="mt-6 text-balance text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-7xl md:text-[88px]">
-            More Inbound Calls
-            <br />
-            From Google.{" "}
+          <h1 className="mt-6 text-balance text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-7xl md:text-[80px]">
+            We Get Home Service Businesses More Qualified Inbound Calls from Google Ads in 30 Days or Less -{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-br from-accent via-accent to-[oklch(0.7_0.18_230)] bg-clip-text text-transparent">
-                Guaranteed.
+                Or Month 2 is FREE.
               </span>
             </span>
           </h1>
