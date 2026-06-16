@@ -59,7 +59,7 @@
   --navy-900: oklch(0.20 0.04 260);
   --navy-800: oklch(0.26 0.045 260);
   --navy-700: oklch(0.34 0.05 260);
-  --accent-cyan: oklch(0.84 0.15 215);
+  --accent-cyan: #006F7C;
 
   --background: var(--navy-950);
   --foreground: oklch(0.985 0.003 250);
@@ -74,7 +74,7 @@
   --muted: var(--navy-800);
   --muted-foreground: oklch(0.72 0.02 250);
   --accent: var(--accent-cyan);
-  --accent-foreground: var(--navy-950);
+  --accent-foreground: oklch(0.985 0.003 250);
   --destructive: oklch(0.6 0.22 25);
   --destructive-foreground: oklch(0.985 0.003 250);
   --border: oklch(1 0 0 / 10%);
@@ -140,7 +140,7 @@
 @utility glow-cta {
   box-shadow:
     0 0 0 1px oklch(1 0 0 / 0.12),
-    0 8px 24px -8px oklch(0.84 0.15 215 / 0.55),
+    0 8px 24px -8px #006F7C,
     inset 0 1px 0 oklch(1 0 0 / 0.25);
 }
 
