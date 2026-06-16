@@ -107,12 +107,11 @@ function Hero() {
 
       <motion.div style={{ y, opacity }} className="relative mx-auto max-w-5xl px-5 text-center sm:px-8">
         <Reveal>
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur-sm opacity-0">
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
             </span>
-            Google Ads for US home service businesses
           </div>
         </Reveal>
 
@@ -129,14 +128,14 @@ function Hero() {
           <p className="mx-auto mt-7 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl">
             We build and manage complete Google Ads systems for home service businesses.
             You're live in <span className="font-semibold text-foreground">3-5 business days</span>.
-            If we don't make you money in 30 days, <span className="font-semibold text-foreground">month 2 is free</span>.
+            If we don't make you money in 30 days, <span className="font-semibold text-foreground">month 2 is on us</span>.
           </p>
         </Reveal>
 
         <Reveal delay={0.3}>
           <div className="mt-10 flex flex-col items-center gap-4">
             <CTAButton size="lg">Book Your Free Google Ads Audit</CTAButton>
-            <p className="text-xs text-muted-foreground">No commitment. No pitch. Just a straight audit of your market.</p>
+            <p className="text-xs text-muted-foreground">{"\n"}</p>
           </div>
         </Reveal>
 
