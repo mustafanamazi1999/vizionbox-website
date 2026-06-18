@@ -1,6 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+export const CALENDLY_URL =
+  "https://calendly.com/mustafa-thevizionbox/free-google-ads-audit";
+
 type Props = {
   children: React.ReactNode;
   className?: string;
@@ -14,7 +17,7 @@ export function CTAButton({
   className,
   size = "default",
   variant = "primary",
-  href = "#book",
+  href,
 }: Props) {
   const sizeClasses = {
     sm: "px-5 py-2.5 text-sm",
@@ -24,12 +27,16 @@ export function CTAButton({
 
   const variantClasses =
     variant === "primary"
-      ? "cta-shine glow-cta bg-accent text-accent-foreground hover:brightness-110"
-      : "border border-accent/40 bg-white/5 text-foreground backdrop-blur-sm hover:bg-accent/10 hover:border-accent";
+      ? "cta-shine glow-cta bg-brand text-white hover:brightness-110"
+      : "border border-white/20 bg-white/5 text-foreground backdrop-blur-sm hover:bg-white/10 hover:border-brand";
+
+  const finalHref = href ?? CALENDLY_URL;
+  const isExternal = finalHref.startsWith("http");
 
   return (
     <a
-      href={href}
+      href={finalHref}
+      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
         "group inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]",
         sizeClasses,
