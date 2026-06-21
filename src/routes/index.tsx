@@ -28,10 +28,10 @@ import { Reveal } from "@/components/Reveal";
 import { CountUp } from "@/components/CountUp";
 import { CountDown } from "@/components/CountDown";
 import { usePastHero } from "@/hooks/use-past-hero";
-import logoFullAsset from "@/assets/vizionbox-full.png.asset.json";
-import googlePartnerAsset from "@/assets/google-partner.png.asset.json";
-import googleAdsCertAsset from "@/assets/google-ads-certified.png.asset.json";
-import googleAdsSearchAsset from "@/assets/google-ads-search.png.asset.json";
+const LOGO_SRC = "/vizionbox-logo.png";
+const GOOGLE_PARTNER_SRC = "/google-partner.png";
+const GOOGLE_ADS_CERT_SRC = "/google-ads-cert.png";
+const GOOGLE_ADS_SEARCH_SRC = "/google-ads-search.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
