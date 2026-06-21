@@ -289,9 +289,9 @@ function ProofBar() {
 /* ---------------- Certifications ---------------- */
 
 const CERTS = [
-  { src: googlePartnerAsset.url, label: "Google Partner" },
-  { src: googleAdsSearchAsset.url, label: "Google Ads Search Certified" },
-  { src: googleAdsCertAsset.url, label: "Google Ads Certified" },
+  { src: GOOGLE_PARTNER_SRC, label: "Google Partner" },
+  { src: GOOGLE_ADS_SEARCH_SRC, label: "Google Ads Search Certified" },
+  { src: GOOGLE_ADS_CERT_SRC, label: "Google Ads Certified" },
 ];
 
 function Certifications() {
