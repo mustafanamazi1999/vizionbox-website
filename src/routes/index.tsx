@@ -460,7 +460,7 @@ function WhatYouGet() {
           <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">
             <span className="block">The complete system.</span>
             <span className="mt-2 block bg-gradient-to-br from-accent to-[#00B5C7] bg-clip-text text-transparent">
-              Built, launched, optimized. By us.
+              Built, launched, optimized.
             </span>
           </h2>
         </Reveal>
