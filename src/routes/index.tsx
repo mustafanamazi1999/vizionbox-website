@@ -304,7 +304,11 @@ function Certifications() {
               <img
                 src={c.src}
                 alt={c.label}
-                className="h-20 w-auto object-contain sm:h-24"
+                className={
+                  i === 1
+                    ? "h-20 w-auto object-contain sm:h-24"
+                    : "h-[92px] w-auto object-contain sm:h-[110px]"
+                }
                 loading="lazy"
               />
             </Reveal>
