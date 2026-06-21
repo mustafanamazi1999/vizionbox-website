@@ -28,10 +28,10 @@ import { Reveal } from "@/components/Reveal";
 import { CountUp } from "@/components/CountUp";
 import { CountDown } from "@/components/CountDown";
 import { usePastHero } from "@/hooks/use-past-hero";
-import logoFullAsset from "@/assets/vizionbox-full.png.asset.json";
-import googlePartnerAsset from "@/assets/google-partner.png.asset.json";
-import googleAdsCertAsset from "@/assets/google-ads-certified.png.asset.json";
-import googleAdsSearchAsset from "@/assets/google-ads-search.png.asset.json";
+const LOGO_SRC = "/vizionbox-logo.png";
+const GOOGLE_PARTNER_SRC = "/google-partner.png";
+const GOOGLE_ADS_CERT_SRC = "/google-ads-cert.png";
+const GOOGLE_ADS_SEARCH_SRC = "/google-ads-search.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const LOGO_URL = logoFullAsset.url;
+const LOGO_URL = LOGO_SRC;
 
 /* Spring used on whileTap so touch users feel the lift desktop users get on hover. */
 const TAP = { scale: 0.98 } as const;
@@ -289,9 +289,9 @@ function ProofBar() {
 /* ---------------- Certifications ---------------- */
 
 const CERTS = [
-  { src: googlePartnerAsset.url, label: "Google Partner" },
-  { src: googleAdsSearchAsset.url, label: "Google Ads Search Certified" },
-  { src: googleAdsCertAsset.url, label: "Google Ads Certified" },
+  { src: GOOGLE_PARTNER_SRC, label: "Google Partner" },
+  { src: GOOGLE_ADS_SEARCH_SRC, label: "Google Ads Search Certified" },
+  { src: GOOGLE_ADS_CERT_SRC, label: "Google Ads Certified" },
 ];
 
 function Certifications() {
