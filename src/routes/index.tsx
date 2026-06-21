@@ -217,7 +217,7 @@ function Hero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h1 className="mt-5 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-[72px]">
+          <h1 className="mt-5 text-balance text-[2.5rem] font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-[72px]">
             We Get Home Service Businesses More Qualified Inbound Calls in 30 Days{" "}
             <span className="bg-gradient-to-br from-accent to-[#00B5C7] bg-clip-text text-transparent">
               — Or Month 2 is FREE.
