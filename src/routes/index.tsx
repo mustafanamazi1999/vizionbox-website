@@ -113,7 +113,7 @@ function Header({ pastHero }: { pastHero: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-[9px] sm:px-8 sm:py-[10px]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-[8px] sm:px-8 sm:py-[9px]">
         <Logo height={112} />
 
         <nav className="hidden items-center gap-6 lg:flex">
