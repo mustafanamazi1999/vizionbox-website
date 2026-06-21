@@ -598,14 +598,14 @@ function Industries() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 md:max-w-5xl md:mx-auto">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 md:max-w-[70rem] md:mx-auto">
           {INDUSTRIES.map((ind, i) => (
             <Reveal key={ind.name} delay={(i % 3) * 0.06}>
               <motion.div
                 whileHover={{ y: -6, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 280, damping: 20 }}
-                className="group relative aspect-[4/5] md:aspect-[5/4] overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-accent/60 hover:shadow-[0_20px_60px_-15px_rgba(0,111,124,0.55)] active:border-accent/60"
+                className="group relative aspect-[4/5] md:aspect-[6/5] overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-accent/60 hover:shadow-[0_20px_60px_-15px_rgba(0,111,124,0.55)] active:border-accent/60"
               >
                 <img
                   src={ind.img}
