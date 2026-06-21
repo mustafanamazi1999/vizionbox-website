@@ -53,7 +53,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const LOGO_URL = logoFullAsset.url;
+const LOGO_URL = LOGO_SRC;
 
 /* Spring used on whileTap so touch users feel the lift desktop users get on hover. */
 const TAP = { scale: 0.98 } as const;
