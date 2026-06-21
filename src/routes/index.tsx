@@ -113,7 +113,7 @@ function Header({ pastHero }: { pastHero: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-[9px] sm:px-8 sm:py-[10px]">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-[8px] sm:px-8 sm:py-[9px]">
         <Logo height={112} />
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -185,7 +185,7 @@ function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative overflow-hidden pt-36 pb-20 sm:pt-40 sm:pb-24"
+      className="relative overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-24"
     >
       <motion.div style={{ y: bgY }} className="absolute inset-0">
         <div className="absolute inset-0 grid-bg" />
@@ -217,7 +217,7 @@ function Hero() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h1 className="mt-5 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-[72px]">
+          <h1 className="mt-5 text-balance text-[2.5rem] font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-[72px]">
             We Get Home Service Businesses More Qualified Inbound Calls in 30 Days{" "}
             <span className="bg-gradient-to-br from-accent to-[#00B5C7] bg-clip-text text-transparent">
               — Or Month 2 is FREE.
@@ -304,7 +304,11 @@ function Certifications() {
               <img
                 src={c.src}
                 alt={c.label}
-                className="h-20 w-auto object-contain sm:h-24"
+                className={
+                  i === 1
+                    ? "h-20 w-auto object-contain sm:h-24"
+                    : "h-[92px] w-auto object-contain sm:h-[110px]"
+                }
                 loading="lazy"
               />
             </Reveal>
@@ -456,7 +460,7 @@ function WhatYouGet() {
           <h2 className="mt-3 max-w-3xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">
             <span className="block">The complete system.</span>
             <span className="mt-2 block bg-gradient-to-br from-accent to-[#00B5C7] bg-clip-text text-transparent">
-              Built, launched, optimized. By us.
+              Built, launched, optimized.
             </span>
           </h2>
         </Reveal>
