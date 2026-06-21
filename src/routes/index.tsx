@@ -298,7 +298,7 @@ function Certifications() {
   return (
     <section className="border-b border-white/5 py-10">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4 sm:gap-x-8">
+        <div className="mx-auto grid max-w-3xl grid-cols-3 items-center justify-items-center gap-x-4 sm:gap-x-16">
           {CERTS.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.08}>
               <img
