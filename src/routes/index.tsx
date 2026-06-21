@@ -113,7 +113,7 @@ function Header({ pastHero }: { pastHero: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-[9px] sm:px-8 sm:py-[10px]">
         <Logo height={112} />
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -185,7 +185,7 @@ function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-24"
+      className="relative overflow-hidden pt-36 pb-20 sm:pt-40 sm:pb-24"
     >
       <motion.div style={{ y: bgY }} className="absolute inset-0">
         <div className="absolute inset-0 grid-bg" />
@@ -298,7 +298,7 @@ function Certifications() {
   return (
     <section className="border-b border-white/5 py-10">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4 sm:gap-x-8">
+        <div className="mx-auto grid max-w-3xl grid-cols-3 items-center justify-items-center gap-x-4 sm:gap-x-16">
           {CERTS.map((c, i) => (
             <Reveal key={c.label} delay={i * 0.08}>
               <img
@@ -598,14 +598,14 @@ function Industries() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 md:max-w-5xl md:mx-auto">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-5 md:grid-cols-3 md:max-w-[70rem] md:mx-auto">
           {INDUSTRIES.map((ind, i) => (
             <Reveal key={ind.name} delay={(i % 3) * 0.06}>
               <motion.div
                 whileHover={{ y: -6, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 280, damping: 20 }}
-                className="group relative aspect-[4/5] md:aspect-[5/4] overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-accent/60 hover:shadow-[0_20px_60px_-15px_rgba(0,111,124,0.55)] active:border-accent/60"
+                className="group relative aspect-[4/5] md:aspect-[6/5] overflow-hidden rounded-2xl border border-white/10 transition-all duration-500 hover:border-accent/60 hover:shadow-[0_20px_60px_-15px_rgba(0,111,124,0.55)] active:border-accent/60"
               >
                 <img
                   src={ind.img}
