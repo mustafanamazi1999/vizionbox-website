@@ -185,7 +185,7 @@ function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative overflow-hidden pt-48 pb-20 sm:pt-36 sm:pb-24"
+      className="relative overflow-hidden pt-40 pb-20 sm:pt-36 sm:pb-24"
     >
       <motion.div style={{ y: bgY }} className="absolute inset-0">
         <div className="absolute inset-0 grid-bg" />
